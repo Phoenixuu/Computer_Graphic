@@ -12,7 +12,11 @@
 // Window dimensions
 const GLint WIDTH = 800, HEIGHT = 600;
 
+<<<<<<< HEAD
 GLuint VBO, VAO, shader, uniformModel;
+=======
+GLuint VBO, VAO, shader, uniformXMove;
+>>>>>>> c338aaaaa240dcc6ef109f6fb4480cab7e5f0813
 
 bool direction = true;
 float triOffset = 0.0f;
@@ -24,12 +28,18 @@ static const char* vShader = "                                                \n
 #version 330                                                                  \n\
                                                                               \n\
 layout (location = 0) in vec3 pos;											  \n\
+																			  \n\
+uniform float xMove;														  \n\
                                                                               \n\
 uniform mat4 model;                                                           \n\
                                                                               \n\
 void main()                                                                   \n\
 {                                                                             \n\
+<<<<<<< HEAD
     gl_Position = model * vec4(0.4 * pos.x, 0.4 * pos.y, pos.z, 1.0);		  \n\
+=======
+    gl_Position = vec4(0.4 * pos.x + xMove, 0.4 * pos.y, pos.z, 1.0);		  \n\
+>>>>>>> c338aaaaa240dcc6ef109f6fb4480cab7e5f0813
 }";
 
 // Fragment Shader
@@ -127,7 +137,11 @@ void CompileShaders()
 		return;
 	}
 
+<<<<<<< HEAD
 	uniformModel = glGetUniformLocation(shader, "model");
+=======
+	uniformXMove = glGetUniformLocation(shader, "xMove");
+>>>>>>> c338aaaaa240dcc6ef109f6fb4480cab7e5f0813
 
 }
 
@@ -192,8 +206,12 @@ int main()
 		if (direction) {
 			triOffset += triIncrement;
 		}
+<<<<<<< HEAD
 		else
 		{
+=======
+		else {
+>>>>>>> c338aaaaa240dcc6ef109f6fb4480cab7e5f0813
 			triOffset -= triIncrement;
 		}
 
@@ -207,10 +225,14 @@ int main()
 
 		glUseProgram(shader);
 
+<<<<<<< HEAD
 		glm::mat4 model;
 		model = glm::translate(model, glm::vec3(triOffset, 0.0f, 0.0f));
 
 		glUniformMatrix4fv(uniformModel, 1, GL_FALSE, glm::value_ptr(model));
+=======
+		glUniform1f(uniformXMove, triOffset);
+>>>>>>> c338aaaaa240dcc6ef109f6fb4480cab7e5f0813
 
 		glBindVertexArray(VAO);
 		glDrawArrays(GL_TRIANGLES, 0, 3);

@@ -75,6 +75,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
+<<<<<<< HEAD
     <IncludePath>D:\OpenGL\External Libs\GLEW\include;D:\OpenGL\External Libs\GLM;D:\OpenGL\External Libs\GLFW\glfw-3.3.9.bin.WIN32\lib-vc2022;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -88,6 +89,21 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
     <IncludePath>D:\OpenGL\External Libs\GLEW\include;D:\OpenGL\External Libs\GLM;D:\OpenGL\External Libs\GLFW\glfw-3.3.9.bin.WIN32\lib-vc2022;$(IncludePath)</IncludePath>
+=======
+    <IncludePath>D:\OpenGL\External Libs\GLFW\glfw-3.3.9.bin.WIN32;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>D:\OpenGL\External Libs\GLFW\glfw-3.3.9.bin.WIN32;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>D:\OpenGL\External Libs\GLFW\glfw-3.3.9.bin.WIN32;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>D:\OpenGL\External Libs\GLFW\glfw-3.3.9.bin.WIN32;$(IncludePath)</IncludePath>
+>>>>>>> c338aaaaa240dcc6ef109f6fb4480cab7e5f0813
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -96,12 +112,20 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+<<<<<<< HEAD
       <AdditionalIncludeDirectories>D:\OpenGL\External Libs\GLEW\include;D:\OpenGL\External Libs\GLFW\include;D:\OpenGL\External Libs\GLM;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+=======
+      <AdditionalIncludeDirectories>D:\OpenGL\External Libs\GLEW\include;D:\OpenGL\External Libs\GLFW\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+>>>>>>> c338aaaaa240dcc6ef109f6fb4480cab7e5f0813
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+<<<<<<< HEAD
       <AdditionalLibraryDirectories>D:\OpenGL\External Libs\GLM;D:\OpenGL\External Libs\GLFW\glfw-3.3.9.bin.WIN32\lib-vc2022;D:\OpenGL\External Libs\GLEW\lib\Release\Win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+=======
+      <AdditionalLibraryDirectories>$(SolutionDir)/../../External Libs/GLEW/lib/Release/Win32;D:\OpenGL\External Libs\GLFW\glfw-3.3.9.bin.WIN32\lib-vc2022;D:\OpenGL\External Libs\GLEW\lib\Release\Win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+>>>>>>> c338aaaaa240dcc6ef109f6fb4480cab7e5f0813
       <AdditionalDependencies>glfw3.lib;glew32.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -112,12 +136,20 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+<<<<<<< HEAD
       <AdditionalIncludeDirectories>D:\OpenGL\External Libs\GLEW\include;D:\OpenGL\External Libs\GLFW\include;D:\OpenGL\External Libs\GLM;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+=======
+      <AdditionalIncludeDirectories>D:\OpenGL\External Libs\GLEW\include;D:\OpenGL\External Libs\GLFW\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+>>>>>>> c338aaaaa240dcc6ef109f6fb4480cab7e5f0813
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+<<<<<<< HEAD
       <AdditionalLibraryDirectories>D:\OpenGL\External Libs\GLM;D:\OpenGL\External Libs\GLFW\glfw-3.3.9.bin.WIN32\lib-vc2022;D:\OpenGL\External Libs\GLEW\lib\Release\Win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+=======
+      <AdditionalLibraryDirectories>$(SolutionDir)/../../External Libs/GLEW/lib/Release/Win32;D:\OpenGL\External Libs\GLFW\glfw-3.3.9.bin.WIN32\lib-vc2022;D:\OpenGL\External Libs\GLEW\lib\Release\Win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+>>>>>>> c338aaaaa240dcc6ef109f6fb4480cab7e5f0813
       <AdditionalDependencies>glfw3.lib;glew32.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -130,14 +162,22 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+<<<<<<< HEAD
       <AdditionalIncludeDirectories>D:\OpenGL\External Libs\GLEW\include;D:\OpenGL\External Libs\GLFW\include;D:\OpenGL\External Libs\GLM;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+=======
+      <AdditionalIncludeDirectories>D:\OpenGL\External Libs\GLEW\include;D:\OpenGL\External Libs\GLFW\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+>>>>>>> c338aaaaa240dcc6ef109f6fb4480cab7e5f0813
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+<<<<<<< HEAD
       <AdditionalLibraryDirectories>D:\OpenGL\External Libs\GLM;D:\OpenGL\External Libs\GLFW\glfw-3.3.9.bin.WIN32\lib-vc2022;D:\OpenGL\External Libs\GLEW\lib\Release\Win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+=======
+      <AdditionalLibraryDirectories>$(SolutionDir)/../../External Libs/GLEW/lib/Release/Win32;D:\OpenGL\External Libs\GLFW\glfw-3.3.9.bin.WIN32\lib-vc2022;D:\OpenGL\External Libs\GLEW\lib\Release\Win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+>>>>>>> c338aaaaa240dcc6ef109f6fb4480cab7e5f0813
       <AdditionalDependencies>glfw3.lib;glew32.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -150,14 +190,22 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+<<<<<<< HEAD
       <AdditionalIncludeDirectories>D:\OpenGL\External Libs\GLEW\include;D:\OpenGL\External Libs\GLFW\include;D:\OpenGL\External Libs\GLM;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+=======
+      <AdditionalIncludeDirectories>D:\OpenGL\External Libs\GLEW\include;D:\OpenGL\External Libs\GLFW\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+>>>>>>> c338aaaaa240dcc6ef109f6fb4480cab7e5f0813
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+<<<<<<< HEAD
       <AdditionalLibraryDirectories>D:\OpenGL\External Libs\GLM;D:\OpenGL\External Libs\GLFW\glfw-3.3.9.bin.WIN32\lib-vc2022;D:\OpenGL\External Libs\GLEW\lib\Release\Win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+=======
+      <AdditionalLibraryDirectories>$(SolutionDir)/../../External Libs/GLEW/lib/Release/Win32;D:\OpenGL\External Libs\GLFW\glfw-3.3.9.bin.WIN32\lib-vc2022;D:\OpenGL\External Libs\GLEW\lib\Release\Win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+>>>>>>> c338aaaaa240dcc6ef109f6fb4480cab7e5f0813
       <AdditionalDependencies>glfw3.lib;glew32.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>

@@ -1,4 +1,10 @@
 ﻿  main.cpp
+<<<<<<< HEAD
   OpenGLCourseApp.vcxproj -> D:\OpenGL\Computer_graphic\OpenGLCourseApp\Debug\OpenGLCourseApp.exe
   'pwsh.exe' is not recognized as an internal or external command,
   operable program or batch file.
+=======
+  LINK : D:\OpenGL\OpenGLCourseApp\Computer_Graphic\OpenGLCourseApp\Debug\OpenGLCourseApp.exe not found or not built by the last incremental link; performing full link
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets(1134,5): error MSB6006: "link.exe" exited with code 1104.
+LINK : fatal error LNK1104: cannot open file 'glew32.lib'
+>>>>>>> c338aaaaa240dcc6ef109f6fb4480cab7e5f0813
